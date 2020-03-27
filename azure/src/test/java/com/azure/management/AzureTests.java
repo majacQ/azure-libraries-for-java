@@ -1177,12 +1177,12 @@ public class AzureTests extends TestBase {
 //                    .runTest(azure.containerGroups(), azure.resourceGroups(), azure.subscriptionId());
 //        }
 //    }
-//
-//    @Test
-//    public void testContainerRegistry() throws Exception {
-//        new TestContainerRegistry()
-//                .runTest(azure.containerRegistries(), azure.resourceGroups());
-//    }
+
+    @Test
+    public void testContainerRegistry() throws Exception {
+        new TestContainerRegistry()
+                .runTest(azure.containerRegistries(), azure.resourceGroups());
+    }
 
     @Test
     public void testCosmosDB() throws Exception {
