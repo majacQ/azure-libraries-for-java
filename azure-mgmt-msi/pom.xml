@@ -54,7 +54,7 @@
         <dependency>
             <groupId>com.microsoft.azure</groupId>
             <artifactId>azure-mgmt-graph-rbac</artifactId>
-            <version>1.41.2-SNAPSHOT</version>
+            <version>1.41.2</version>
         </dependency>
         <dependency>
             <groupId>junit</groupId>
