@@ -1585,7 +1585,7 @@ class VirtualMachineImpl
 
     @Override
     public String osUnmanagedDiskVhdUri() {
-        if (isManagedDiskEnabled()) {
+        if (isManagedDiskEnabled() || this.inner().storageProfile().osDisk().vhd() == null) {
             return null;
         }
         return inner().storageProfile().osDisk().vhd().uri();
@@ -2000,7 +2000,7 @@ class VirtualMachineImpl
     }
 
     private void copyInnerToUpdateParameter(VirtualMachineUpdate updateParameter) {
-        updateParameter.withPlan(this.inner().plan());
+        //updateParameter.withPlan(this.inner().plan());    // update cannot change plan
         updateParameter.withHardwareProfile(this.inner().hardwareProfile());
         updateParameter.withStorageProfile(this.inner().storageProfile());
         updateParameter.withOsProfile(this.inner().osProfile());

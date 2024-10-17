@@ -8,7 +8,7 @@
   <parent>
     <groupId>com.microsoft.azure</groupId>
     <artifactId>azure-parent</artifactId>
-    <version>1.41.2-SNAPSHOT</version>
+    <version>1.41.5-SNAPSHOT</version>
     <relativePath>../pom.xml</relativePath>
   </parent>
 
@@ -16,7 +16,7 @@
   <packaging>jar</packaging>
 
   <name>Microsoft Azure SDK for Compute Management</name>
-  <description>This package contains Microsoft Azure Compute Management SDK. This package is in low maintenance mode and being phased out. To use the latest Azure SDK for resource management, please see https://aka.ms/azsdk/java/mgmt</description>
+  <description>This package contains Microsoft Azure Compute Management SDK. This package has been deprecated. A replacement package com.azure.resourcemanager:azure-resourcemanager-compute is available as of 31-March-2022. We strongly encourage you to upgrade to continue receiving updates. See Migration Guide https://aka.ms/java-track2-migration-guide for guidance on upgrading. Refer to our deprecation policy https://azure.github.io/azure-sdk/policies_support.html for more details.</description>
   <url>https://github.com/Azure/azure-sdk-for-java</url>
 
   <licenses>
@@ -53,22 +53,22 @@
     <dependency>
       <groupId>com.microsoft.azure</groupId>
       <artifactId>azure-mgmt-resources</artifactId>
-      <version>1.41.2-SNAPSHOT</version>
+      <version>1.41.5-SNAPSHOT</version>
     </dependency>
     <dependency>
       <groupId>com.microsoft.azure</groupId>
       <artifactId>azure-mgmt-storage</artifactId>
-      <version>1.41.2-SNAPSHOT</version>
+      <version>1.41.5-SNAPSHOT</version>
     </dependency>
     <dependency>
       <groupId>com.microsoft.azure</groupId>
       <artifactId>azure-mgmt-network</artifactId>
-      <version>1.41.2-SNAPSHOT</version>
+      <version>1.41.5-SNAPSHOT</version>
     </dependency>
     <dependency>
       <groupId>com.microsoft.azure</groupId>
       <artifactId>azure-mgmt-msi</artifactId>
-      <version>1.41.2-SNAPSHOT</version>
+      <version>1.41.5-SNAPSHOT</version>
     </dependency>
     <dependency>
       <groupId>junit</groupId>
@@ -94,7 +94,7 @@
     <dependency>
       <groupId>com.microsoft.azure</groupId>
       <artifactId>azure-mgmt-keyvault</artifactId>
-      <version>1.41.2-SNAPSHOT</version>
+      <version>1.41.5-SNAPSHOT</version>
       <scope>test</scope>
     </dependency>
     <dependency>
@@ -105,14 +105,14 @@
     <dependency>
       <groupId>com.microsoft.azure</groupId>
       <artifactId>azure-mgmt-graph-rbac</artifactId>
-      <version>1.41.2-SNAPSHOT</version>
+      <version>1.41.5-SNAPSHOT</version>
     </dependency>
-      <dependency>
-          <groupId>com.google.code.gson</groupId>
-          <artifactId>gson</artifactId>
-          <version>2.2.4</version>
-          <scope>compile</scope>
-      </dependency>
+    <dependency>
+      <groupId>com.google.code.gson</groupId>
+      <artifactId>gson</artifactId>
+      <version>2.9.0</version>
+      <scope>compile</scope>
+    </dependency>
     <dependency>
       <groupId>org.slf4j</groupId>
       <artifactId>slf4j-simple</artifactId>
@@ -131,7 +131,7 @@
         <dependency>
           <groupId>com.microsoft.azure</groupId>
           <artifactId>azure-mgmt-resources</artifactId>
-          <version>1.41.2-SNAPSHOT</version>
+          <version>1.41.5-SNAPSHOT</version>
           <type>test-jar</type>
           <scope>test</scope>
         </dependency>
